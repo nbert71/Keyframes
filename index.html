@@ -13,19 +13,53 @@
 <body>
     <div class="d-flex p-2 flex-column align-items-center m-3">
 
-        <h1>CSS : les keyframes</h1>
+        <h1>CSS : les @keyframes</h1>
+        <em class="pb-3">Nicolas BERT / Glenn LOUEDEC - Électif de Développement Web</em>
 
-        <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="Mamboleoo"
-            data-slug-hash="XWJPxpZ"
-            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-            data-pen-title="Walkers - How to">
-            <span>See the Pen <a href="https://codepen.io/Mamboleoo/pen/XWJPxpZ">
-                    Walkers - How to</a> by Louis Hoebregts (<a href="https://codepen.io/Mamboleoo">@Mamboleoo</a>)
-                on <a href="https://codepen.io">CodePen</a>.</span>
-        </p>
+        <div class="card border-dark mb-3" style="max-width: 50rem;">
+            <div class="card-header">Qu'est ce qu'une <em>@keyframe</em> ?</div>
+            <div class="card-body">
+                <p class="card-text">Les @keyframes permettent de définir les étapes qui composent la séquence d'une
+                    animation CSS.
+                    Cela permet de contrôler une animation plus finement que ce qu'on pourrait obtenir avec les
+                    transitions.</p>
+            </div>
+        </div>
+
+        <div class="card border-dark mb-3" style="max-width: 50rem;">
+            <div class="card-header">De quoi se compose une <em>@keyframe</em> ?</div>
+            <div class="card-body">
+                <p class="card-text">Chaque @keyframe contient une liste de sélecteurs d'étapes dont chacun
+                    contient le pourcentage d'avancement de l'animation auquel il correspond ainsi que les informations
+                    de styles qui correspondent à cette étape..
+                </p>
+                <p>Les étapes peuvent être listées dans n'importe quel ordre. Elles seront enchaînées dans l'ordre
+                    indiqué par le pourcentage d'avancement.</p>
+            </div>
+        </div>
+
+        <p>Voici un exemple d'utilisation d'une keyframe très simple où l'on change la taille et la couleur du texte.</p>
+
+        <iframe class="mb-3" height="300" style="width: 80%;" scrolling="no" title="Text"
+            src="https://codepen.io/nbert71/embed/xxXyaYw?default-tab=css%2Cresult&editable=true" frameborder="no"
+            loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/nbert71/pen/xxXyaYw">
+                Untitled</a> by Nicolas BERT (<a href="https://codepen.io/nbert71">@nbert71</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+        </iframe>
+
+        <p>On peut pousser un peu plus loin l'animation en faisant par exemple une animation de chargement.</p>
+
+        <iframe height="500" style="width: 80%;" scrolling="no" title="ball"
+            src="https://codepen.io/nbert71/embed/jOGeeqg?default-tab=css%2Cresult&editable=true" frameborder="no"
+            loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/nbert71/pen/jOGeeqg">
+                ball</a> by Nicolas BERT (<a href="https://codepen.io/nbert71">@nbert71</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+        </iframe>
+
 
     </div>
 </body>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 </html>
